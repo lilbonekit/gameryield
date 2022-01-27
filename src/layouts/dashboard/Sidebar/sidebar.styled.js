@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink as Link } from "react-router-dom";
 
 export const DashboardSidebarContainer = styled.div`
   display: flex;
@@ -120,7 +121,7 @@ export const DashboardSidebarLinkElement = styled.li`
   }
 `;
 
-export const DashboardSidebarLink = styled.a`
+export const DashboardSidebarLink = styled(Link)`
   display: inline-block;
   border-bottom: 1px solid #09496c;
   transition: border-bottom 250ms;

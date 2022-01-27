@@ -34,7 +34,7 @@ const DashboardSidebar = (props) => {
         <DashboardSidebarLinks>
           {links.map((item, index) => (
             <DashboardSidebarLinkElement key={index}>
-              <DashboardSidebarLink href={item.href}>
+              <DashboardSidebarLink to={item.href}>
                 {item.link}
               </DashboardSidebarLink>
             </DashboardSidebarLinkElement>
