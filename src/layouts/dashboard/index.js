@@ -18,7 +18,7 @@ const DashboardContainer = styled.div`
   flex-direction: column;
   position: relative;
   width: 90%;
-  max-width: 1300px;
+  max-width: 1200px;
   height: calc(100vh - 80px);
   margin: 40px 0;
 `;

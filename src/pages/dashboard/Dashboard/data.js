@@ -45,11 +45,15 @@ export const charts = [
     icon: <MdInfoOutline />,
     subtitle: "$123,123,123",
     subtext: "Today",
+    fillcolor: "rgba(0, 245, 252, 0.47)",
+    gradient:
+      "linear-gradient(90deg, rgba(0, 245, 252, 0.47) 0%, rgba(45, 124, 250, 0.47) 100%);",
   },
   {
     title: "Meta Staked",
     icon: <MdInfoOutline />,
     subtitle: "85.34%",
     subtext: "Today",
+    fillcolor: "rgba(255, 0, 143, 0.47)",
   },
 ];

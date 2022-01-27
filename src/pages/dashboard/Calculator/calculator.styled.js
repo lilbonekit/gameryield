@@ -15,14 +15,18 @@ export const CalculatorTitle = styled.h3`
   font-size: 24px;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 40px;
-  @media screen and (max-width: 1024px) {
+  margin-bottom: 30px;
+  @media screen and (max-width: 1440px) {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 18px;
+    margin-bottom: 15px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -33,16 +37,16 @@ export const CalculatorCard = styled.div`
   align-items: center;
   width: 100%;
   height: fit-content;
-  padding: 85px 180px;
+  padding: 55px 150px;
   background-color: rgba(255, 255, 255, 0.05);
   @media screen and (max-width: 1440px) {
-    padding: 70px 130px;
+    padding: 30px 100px;
   }
   @media screen and (max-width: 1024px) {
-    padding: 55px 80px;
+    padding: 25px 50px;
   }
   @media screen and (max-width: 768px) {
-    padding: 40px 30px;
+    padding: 20px 20px;
   }
 `;
 
@@ -51,15 +55,15 @@ export const CalculatorCardHeader = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   @media screen and (max-width: 1440px) {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
   }
   @media screen and (max-width: 1024px) {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   @media screen and (max-width: 768px) {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -68,15 +72,15 @@ export const CalculatorCardInputGroup = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   @media screen and (max-width: 1440px) {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   @media screen and (max-width: 1024px) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   @media screen and (max-width: 768px) {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -86,7 +90,7 @@ export const CalculatorCardPooledETHInput = styled.div`
   width: 45%;
   & > span {
     font-weight: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -96,16 +100,13 @@ export const CalculatorCardSymbol = styled.span`
   stroke-width: 5px;
   padding-top: 30px;
   @media screen and (max-width: 1440px) {
-    margin-bottom: 35px;
-    padding-top: 70px;
+    font-size: 40px;
   }
   @media screen and (max-width: 1024px) {
-    margin-bottom: 20px;
-    padding-top: 50px;
+    font-size: 30px;
   }
   @media screen and (max-width: 768px) {
-    margin-bottom: 5px;
-    padding-top: 35px;
+    font-size: 20px;
   }
 `;
 
@@ -114,16 +115,16 @@ export const CalculatorCardGMLRETHInput = styled.div`
   flex-direction: column;
   width: 23%;
   & > span {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 16px;
   }
 `;
 
 export const CalculatorCardInput = styled.input`
-  height: 75px;
+  height: 70px;
   width: 100%;
   text-align: center;
-  font-size: 45px;
+  font-size: 36px;
   font-weight: bold;
   color: white;
   background-color: transparent;
@@ -131,15 +132,15 @@ export const CalculatorCardInput = styled.input`
   border-radius: 8px;
   @media screen and (max-width: 1440px) {
     height: 60px;
-    font-size: 35px;
+    font-size: 32px;
   }
   @media screen and (max-width: 1024px) {
     height: 55px;
-    font-size: 25px;
+    font-size: 24px;
   }
   @media screen and (max-width: 768px) {
     height: 50px;
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 
@@ -147,19 +148,19 @@ export const CalculatorCardSliderGroup = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   & > span {
     font-size: 16px;
     margin-bottom: 5px;
   }
   @media screen and (max-width: 1440px) {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   @media screen and (max-width: 1024px) {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   @media screen and (max-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -194,16 +195,17 @@ export const CalculatorCardFooterValue = styled.div`
   justify-content: center;
   align-items: flex-end;
   & > span {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     @media screen and (max-width: 1440px) {
-      font-size: 20px;
+      font-size: 18px;
     }
     @media screen and (max-width: 1024px) {
       font-size: 16px;
     }
     @media screen and (max-width: 768px) {
-      font-size: 12px;
+      font-size: 14px;
+      text-align: right;
     }
   }
 `;

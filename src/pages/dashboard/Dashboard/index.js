@@ -34,7 +34,7 @@ const Dashboard = () => {
                 subtext={item.subtext}
                 align={true}
               />
-              <DashboardGraph />
+              <DashboardGraph fillcolor={item.fillcolor} />
             </DashboardChart>
           ))}
         </DashboardChartGroup>

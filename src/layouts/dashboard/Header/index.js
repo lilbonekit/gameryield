@@ -25,7 +25,7 @@ export const DashboardHeader = (props) => {
         </DashboardHeaderMenu>
       )}
       <DashboardTitle width={props.width}>{props.title}</DashboardTitle>
-      <ConnectWalletButton href="/">CONNECT WALLET</ConnectWalletButton>
+      <ConnectWalletButton to="/">CONNECT WALLET</ConnectWalletButton>
     </>
   );
 };

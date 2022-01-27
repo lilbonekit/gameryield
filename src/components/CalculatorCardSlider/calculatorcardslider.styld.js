@@ -28,6 +28,16 @@ export const CalculatorSlider = styled.input`
     background: transparent linear-gradient(270deg, #00f5fc 0%, #133afa 100%) 0%
       0% no-repeat padding-box;
     cursor: pointer;
+    ::after,
+    ::before {
+      content: "";
+      position: absolute;
+      height: 0;
+      width: 0;
+      top: 0;
+      border-top: 90px solid transparent;
+      border-bottom: 90px solid transparent;
+    }
   }
   ::-moz-range-thumb {
     width: 25px;
@@ -35,5 +45,27 @@ export const CalculatorSlider = styled.input`
     border-radius: 50%;
     background: #04aa6d;
     cursor: pointer;
+  }
+  @media screen and (max-width: 768px) {
+    height: 12px;
+    ::-webkit-slider-thumb {
+      width: 18px;
+      height: 18px;
+    }
+    ::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    height: 8px;
+    ::-webkit-slider-thumb {
+      width: 12px;
+      height: 12px;
+    }
+    ::-moz-range-thumb {
+      width: 12px;
+      height: 12px;
+    }
   }
 `;

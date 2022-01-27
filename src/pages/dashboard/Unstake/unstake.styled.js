@@ -21,13 +21,19 @@ export const UnstakeCard = styled.div`
   margin-bottom: 50px;
   @media screen and (max-width: 1440px) {
     margin-bottom: 40px;
+    padding: 40px 0;
   }
   @media screen and (max-width: 1024px) {
     margin-bottom: 30px;
+    padding: 35px 0;
   }
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
     padding: 30px 0;
+  }
+  @media screen and (max-width: 425px) {
+    margin-bottom: 10px;
+    padding: 25px 0;
   }
 `;
 
@@ -39,7 +45,7 @@ export const UnstakeTokenActionGroup = styled.div`
   width: 100%;
   height: fit-content;
   @media screen and (max-width: 1440px) {
-    grid-row-gap: 40px;
+    grid-column-gap: 40px;
   }
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
@@ -48,6 +54,10 @@ export const UnstakeTokenActionGroup = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-row-gap: 20px;
+  }
+  @media screen and (max-width: 425px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
   }
 `;
 
@@ -76,10 +86,10 @@ export const UnstakeTokenActionTitle = styled.h3`
     font-size: 22px;
   }
   @media screen and (max-width: 1024px) {
-    font-size: 24px;
+    font-size: 20px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 22px;
+    font-size: 18px;
   }
 `;
 
@@ -92,11 +102,11 @@ export const UnstakeTokenActionSubTitle = styled.span`
     margin-bottom: 35px;
   }
   @media screen and (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 30px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 25px;
   }
 `;
@@ -110,18 +120,18 @@ export const UnstakeTokenActionBurnContent = styled.h4`
     margin-bottom: 25px;
   }
   @media screen and (max-width: 1024px) {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 20px;
   }
   @media screen and (max-width: 768px) {
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 15px;
   }
 `;
 
 export const UnstakeTokenPolygon = styled.div`
-  height: 200px;
-  width: 120px;
+  height: 180px;
+  width: 108px;
   background: white;
   margin-bottom: 35px;
   position: relative;
@@ -133,37 +143,19 @@ export const UnstakeTokenPolygon = styled.div`
     height: 0;
     width: 0;
     top: 0;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
+    border-top: 90px solid transparent;
+    border-bottom: 90px solid transparent;
   }
   ::before {
-    left: -50px;
-    border-right: 50px solid white;
+    left: -45px;
+    border-right: 45px solid white;
   }
   ::after {
-    right: -50px;
-    border-left: 50px solid white;
+    right: -45px;
+    border-left: 45px solid white;
   }
   @media screen and (max-width: 1440px) {
     margin-bottom: 30px;
-    height: 180px;
-    width: 108px;
-    ::after,
-    ::before {
-      border-top: 90px solid transparent;
-      border-bottom: 90px solid transparent;
-    }
-    ::before {
-      left: -45px;
-      border-right: 45px solid white;
-    }
-    ::after {
-      right: -45px;
-      border-left: 45px solid white;
-    }
-  }
-  @media screen and (max-width: 1024px) {
-    margin-bottom: 25px;
     height: 160px;
     width: 96px;
     ::after,
@@ -180,8 +172,8 @@ export const UnstakeTokenPolygon = styled.div`
       border-left: 40px solid white;
     }
   }
-  @media screen and (max-width: 768px) {
-    margin-bottom: 20px;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 25px;
     height: 140px;
     width: 84px;
     ::after,
@@ -194,8 +186,26 @@ export const UnstakeTokenPolygon = styled.div`
       border-right: 35px solid white;
     }
     ::after {
-      right: -40px;
-      border-left: 40px solid white;
+      right: -35px;
+      border-left: 35px solid white;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 20px;
+    height: 120px;
+    width: 72px;
+    ::after,
+    ::before {
+      border-top: 60px solid transparent;
+      border-bottom: 60px solid transparent;
+    }
+    ::before {
+      left: -30px;
+      border-right: 30px solid white;
+    }
+    ::after {
+      right: -30px;
+      border-left: 30px solid white;
     }
   }
 `;
@@ -207,21 +217,30 @@ export const UnstakeTokenActionClaimContent = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 40px;
-  margin-bottom: 65px;
+  margin-bottom: 60px;
   & > :not(:last-child) {
     margin-bottom: 20px;
   }
   @media screen and (max-width: 1440px) {
     margin-top: 35px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    & > :not(:last-child) {
+      margin-bottom: 18px;
+    }
   }
   @media screen and (max-width: 1024px) {
     margin-top: 30px;
-    margin-bottom: 55px;
+    margin-bottom: 40px;
+    & > :not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
   @media screen and (max-width: 768px) {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    & > :not(:last-child) {
+      margin-bottom: 14px;
+    }
   }
 `;
 
@@ -235,12 +254,15 @@ export const UnstakeTokenAction = styled.a`
   font-weight: bold;
   cursor: pointer;
   @media screen and (max-width: 1440px) {
+    font-size: 22px;
     padding: 8px 55px;
   }
   @media screen and (max-width: 1024px) {
+    font-size: 20px;
     padding: 6px 40px;
   }
   @media screen and (max-width: 768px) {
+    font-size: 18px;
     padding: 4px 25px;
   }
 `;
