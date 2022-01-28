@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  ResponsiveContainer,
-  AreaChart,
-  Area,
-  XAxis,
-  YAxis,
-  Tooltip,
-} from "recharts";
+import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis } from "recharts";
 import { DashboardGraphContainer } from "./dashboardgraph.styled";
 
 const data = [

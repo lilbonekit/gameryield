@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CalculatorCardSlider from "../../../components/CalculatorCardSlider";
+import Slider from "../../../components/Slider";
 import TextGroup from "../../../components/TextGroup";
 import { DashboardLayout } from "../../../layouts";
 import {
@@ -79,7 +79,7 @@ const Calculator = () => {
           </CalculatorCardInputGroup>
           <CalculatorCardSliderGroup>
             <span>30 days</span>
-            <CalculatorCardSlider />
+            <Slider value="30" />
           </CalculatorCardSliderGroup>
           <CalculatorCardFooter>
             <CalculatorCardFooterName>

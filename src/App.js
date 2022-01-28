@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   Calculator,
   Dashboard,
-  Docs,
   EtherYield,
   MintGamerhunt,
   Unstake,
@@ -20,7 +19,6 @@ function App() {
           <Route path="/unstake" element={<Unstake />}></Route>
           <Route path="/calculator" element={<Calculator />}></Route>
           <Route path="/etheryield" element={<EtherYield />}></Route>
-          <Route path="/docs" element={<Docs />}></Route>
         </Routes>
       </Router>
     </>

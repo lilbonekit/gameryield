@@ -21,6 +21,6 @@ export const links = [
   },
   {
     link: "Docs",
-    href: "/docs",
+    href: "https://wiki.gameryield.io/games",
   },
 ];

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const CalculatorCardSliderContainer = styled.div`
+export const SliderContainer = styled.div`
   width: 100%;
 `;
 
-export const CalculatorSlider = styled.input`
+export const SliderContent = styled.input`
   -webkit-appearance: none;
   width: 100%;
   height: 16px;
@@ -45,6 +45,17 @@ export const CalculatorSlider = styled.input`
     border-radius: 50%;
     background: #04aa6d;
     cursor: pointer;
+  }
+  @media screen and (max-width: 1440px) {
+    height: 14px;
+    ::-webkit-slider-thumb {
+      width: 20px;
+      height: 20px;
+    }
+    ::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+    }
   }
   @media screen and (max-width: 768px) {
     height: 12px;

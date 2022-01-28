@@ -3,4 +3,3 @@ export { default as MintGamerhunt } from "./MintGamerhunt";
 export { default as Unstake } from "./Unstake";
 export { default as Calculator } from "./Calculator";
 export { default as EtherYield } from "./EtherYield";
-export { default as Docs } from "./Docs";
