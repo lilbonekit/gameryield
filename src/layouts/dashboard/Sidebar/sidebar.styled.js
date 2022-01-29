@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const DashboardSidebarContainer = styled.div`
   display: flex;
@@ -135,7 +136,7 @@ export const DashboardSidebarLinkElement = styled.li`
   }
 `;
 
-export const DashboardSidebarLink = styled.a`
+export const DashboardSidebarLink = styled(Link)`
   display: inline-block;
   transition: border-bottom 250ms;
   padding-bottom: 3px;

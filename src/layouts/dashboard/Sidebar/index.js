@@ -41,7 +41,7 @@ const DashboardSidebar = (props) => {
               key={index}
               actived={item.href === router ? 1 : 0}
             >
-              <DashboardSidebarLink href={item.href}>
+              <DashboardSidebarLink to={item.href}>
                 {item.link}
               </DashboardSidebarLink>
             </DashboardSidebarLinkElement>
