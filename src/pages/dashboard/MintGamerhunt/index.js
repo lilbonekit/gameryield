@@ -1,4 +1,5 @@
 import React from "react";
+import Tooltip from "@mui/material/Tooltip";
 import {
   MintGamerhuntBurnCard,
   MintGamerhuntContainer,
@@ -53,7 +54,9 @@ const MintGamerhunt = () => {
       <MintGamerhuntContainer>
         <MintGamerhuntActionGroup>
           <MintGamerhuntBurnCard>
-            <MintGamerhuntInfo />
+            <Tooltip title="Coming Soon">
+              <MintGamerhuntInfo />
+            </Tooltip>
             <MintGamerhuntMiddleText>
               Burn Erc tokens from Moose Trax or Wolfgame to guatantee High
               ranking hunter, Wolf or Moose
@@ -72,7 +75,9 @@ const MintGamerhunt = () => {
             <MintGamerhuntMintCardContent>
               <MintGamerhuntMintCardActionGroup>
                 <MintGamerhuntMintCardActionPart>
-                  <MintGamerhuntInfo />
+                  <Tooltip title="Coming Soon">
+                    <MintGamerhuntInfo />
+                  </Tooltip>
                   <MintGamerhuntDaysInput />
                   <MintGamerhuntMintCardActionCouple>
                     <MintGamerhuntMintCardETH>5 ETH</MintGamerhuntMintCardETH>
@@ -82,7 +87,9 @@ const MintGamerhunt = () => {
                   </MintGamerhuntMintCardActionCouple>
                 </MintGamerhuntMintCardActionPart>
                 <MintGamerhuntMintCardAvatar>
-                  <MintGamerhuntInfo />
+                  <Tooltip title="Coming Soon">
+                    <MintGamerhuntInfo />
+                  </Tooltip>
                   <MintGamerhuntMintCardAvatarPart />
                   <MintGamerhuntMintCardAvatarText>
                     You Minted:
@@ -140,7 +147,7 @@ const MintGamerhunt = () => {
                       ))}
                     </MintGamerhuntMintCardFooterTextCol>
                   </MintGamerhuntMintCardFooterText>
-                  <Slider value="30" />
+                  <Slider value="3" />
                 </MintGamerhuntMintCardFooterAction>
               </MintGamerhuntMintCardFooter>
             </MintGamerhuntMintCardContent>
@@ -161,7 +168,7 @@ const MintGamerhunt = () => {
             <span>GEN 2</span>
             <span>GEN 3</span>
           </MintGamerhuntSliderTextGroup>
-          <Slider value="12" />
+          <Slider value="3" />
         </MintGamerhuntSlider>
         <MintGamerhuntChartGroup>
           <Card title="500">

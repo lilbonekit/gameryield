@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import wolf from "../../../assets/image/largewolf.png";
 
 export const UnstakeContent = styled.div`
   display: flex;
@@ -17,23 +18,23 @@ export const UnstakeCard = styled.div`
   width: 100%;
   height: fit-content;
   background-color: rgba(255, 255, 255, 0.05);
-  padding: 45px 0;
+  padding: 35px 0;
   margin-bottom: 50px;
   @media screen and (max-width: 1440px) {
     margin-bottom: 40px;
-    padding: 40px 0;
+    padding: 30px 0;
   }
   @media screen and (max-width: 1024px) {
     margin-bottom: 30px;
-    padding: 35px 0;
+    padding: 25px 0;
   }
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
-    padding: 30px 0;
+    padding: 20px 0;
   }
   @media screen and (max-width: 425px) {
     margin-bottom: 10px;
-    padding: 25px 0;
+    padding: 15px 0;
   }
 `;
 
@@ -131,82 +132,23 @@ export const UnstakeTokenActionBurnContent = styled.h4`
 
 export const UnstakeTokenPolygon = styled.div`
   height: 180px;
-  width: 108px;
-  background: white;
-  margin-bottom: 35px;
-  position: relative;
-  box-sizing: border-box;
-  ::after,
-  ::before {
-    content: "";
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: 0;
-    border-top: 90px solid transparent;
-    border-bottom: 90px solid transparent;
-  }
-  ::before {
-    left: -45px;
-    border-right: 45px solid white;
-  }
-  ::after {
-    right: -45px;
-    border-left: 45px solid white;
-  }
+  width: 180px;
+  background-image: url(${wolf});
+  background-size: cover;
   @media screen and (max-width: 1440px) {
     margin-bottom: 30px;
     height: 160px;
-    width: 96px;
-    ::after,
-    ::before {
-      border-top: 80px solid transparent;
-      border-bottom: 80px solid transparent;
-    }
-    ::before {
-      left: -40px;
-      border-right: 40px solid white;
-    }
-    ::after {
-      right: -40px;
-      border-left: 40px solid white;
-    }
+    width: 160px;
   }
   @media screen and (max-width: 1024px) {
     margin-bottom: 25px;
     height: 140px;
-    width: 84px;
-    ::after,
-    ::before {
-      border-top: 70px solid transparent;
-      border-bottom: 70px solid transparent;
-    }
-    ::before {
-      left: -35px;
-      border-right: 35px solid white;
-    }
-    ::after {
-      right: -35px;
-      border-left: 35px solid white;
-    }
+    width: 140px;
   }
   @media screen and (max-width: 768px) {
     margin-bottom: 20px;
     height: 120px;
-    width: 72px;
-    ::after,
-    ::before {
-      border-top: 60px solid transparent;
-      border-bottom: 60px solid transparent;
-    }
-    ::before {
-      left: -30px;
-      border-right: 30px solid white;
-    }
-    ::after {
-      right: -30px;
-      border-left: 30px solid white;
-    }
+    width: 120px;
   }
 `;
 
@@ -252,7 +194,13 @@ export const UnstakeTokenAction = styled.a`
       : "transparent linear-gradient(270deg, #00f5fc 0%, #133afa 100%) 0% 0% no-repeat padding-box"};
   font-size: 24px;
   font-weight: bold;
+  border: 1px solid transparent;
   cursor: pointer;
+  :hover,
+  :active {
+    border: 1px solid white;
+  }
+  transition: all 0.2s ease-in-out;
   @media screen and (max-width: 1440px) {
     font-size: 22px;
     padding: 8px 55px;

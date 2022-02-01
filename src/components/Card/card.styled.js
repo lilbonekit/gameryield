@@ -6,6 +6,7 @@ export const CardContainer = styled.div`
   align-items: center;
   gap: 0;
   width: 100%;
+  background-color: #121a3a;
   @media screen and (max-width: 700px) {
     width: 75%;
   }
@@ -43,7 +44,7 @@ export const CardContent = styled.div`
   align-items: center;
   width: 100%;
   padding: 20px 0;
-  background-color: #121a3a;
+  background-color: inherit;
   @media screen and (max-width: 1440px) {
     padding: 16px 0;
   }

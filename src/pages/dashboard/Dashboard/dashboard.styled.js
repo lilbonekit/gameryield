@@ -27,7 +27,6 @@ export const DashboardCard = styled.div`
   }
   @media screen and (max-width: 1024px) {
     padding: 25px 50px;
-    grid-template-columns: 1fr 1fr;
     grid-row-gap: 10px;
     margin-bottom: 20px;
   }

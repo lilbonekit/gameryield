@@ -6,6 +6,7 @@ import {
   DashboardLogo,
   DashboardSidebarContainer,
   DashboardSidebarContent,
+  DashboardSidebarHref,
   DashboardSidebarLink,
   DashboardSidebarLinkElement,
   DashboardSidebarLinks,
@@ -41,11 +42,16 @@ const DashboardSidebar = (props) => {
               key={index}
               actived={item.href === router ? 1 : 0}
             >
-              <DashboardSidebarLink to={item.href}>
+              <DashboardSidebarLink to={item.href} action={item.action}>
                 {item.link}
               </DashboardSidebarLink>
             </DashboardSidebarLinkElement>
           ))}
+          <DashboardSidebarLinkElement>
+            <DashboardSidebarHref href="https://wiki.gameryield.io/games">
+              Doc
+            </DashboardSidebarHref>
+          </DashboardSidebarLinkElement>
         </DashboardSidebarLinks>
       </DashboardSidebarContent>
     </DashboardSidebarContainer>

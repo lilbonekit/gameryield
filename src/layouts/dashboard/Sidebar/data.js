@@ -19,8 +19,4 @@ export const links = [
     link: "Ether Yield (Dividends)",
     href: "/etheryield",
   },
-  {
-    link: "Docs",
-    href: "https://wiki.gameryield.io/games",
-  },
 ];

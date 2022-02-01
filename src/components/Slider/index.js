@@ -7,8 +7,9 @@ const Slider = (props) => {
       <SliderContent
         type="range"
         min="1"
-        max="100"
+        max="12"
         defaultValue={props.value}
+        onChange={(e) => props.setDays(e.target.value)}
       />
     </SliderContainer>
   );

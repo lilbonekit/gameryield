@@ -24,7 +24,7 @@ export const SliderContent = styled.input`
     appearance: none;
     width: 25px;
     height: 25px;
-    border-radius: 50%;
+    border-radius: 5px;
     background: transparent linear-gradient(270deg, #00f5fc 0%, #133afa 100%) 0%
       0% no-repeat padding-box;
     cursor: pointer;
@@ -42,7 +42,7 @@ export const SliderContent = styled.input`
   ::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    border-radius: 50%;
+    border-radius: 5px;
     background: #04aa6d;
     cursor: pointer;
   }

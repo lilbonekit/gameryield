@@ -15,18 +15,18 @@ export const CalculatorTitle = styled.h3`
   font-size: 24px;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   @media screen and (max-width: 1440px) {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   @media screen and (max-width: 1024px) {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   @media screen and (max-width: 768px) {
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 `;
 
@@ -40,13 +40,13 @@ export const CalculatorCard = styled.div`
   padding: 55px 150px;
   background-color: rgba(255, 255, 255, 0.05);
   @media screen and (max-width: 1440px) {
-    padding: 30px 100px;
+    padding: 25px 100px;
   }
   @media screen and (max-width: 1024px) {
-    padding: 25px 50px;
+    padding: 20px 50px;
   }
   @media screen and (max-width: 768px) {
-    padding: 20px 20px;
+    padding: 15px 20px;
   }
 `;
 

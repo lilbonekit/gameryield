@@ -36,22 +36,26 @@ export const MintGamerhuntContainer = styled.div`
 export const MintGamerhuntActionGroup = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 30px;
   width: 100%;
   @media screen and (max-width: 1440px) {
     gap: 20px;
+  }
+  @media screen and (max-width: 1024px) {
+    gap: 15px;
   }
   @media screen and (max-width: 768px) {
     gap: 10px;
   }
   @media screen and (max-width: 700px) {
     flex-direction: column;
+    align-items: center;
     & > * {
       width: 75% !important;
     }
   }
   @media screen and (max-width: 425px) {
+    align-content: center;
     & > * {
       width: 100% !important;
     }
@@ -307,6 +311,11 @@ export const MintGamerhuntMintCardETH = styled.div`
   text-align: center;
   padding: 5px 0;
   cursor: pointer;
+  :hover,
+  :active {
+    border: 1px solid #60cae9;
+  }
+  transition: all 0.5s ease-in-out;
   @media screen and (max-width: 1440px) {
     font-size: 14px;
     padding: 4px 0;
@@ -329,7 +338,13 @@ export const MintGamerhuntMintCardAction = styled.div`
   font-size: 16px;
   text-align: center;
   padding: 5px 0;
+  border: 1px solid transparent;
   cursor: pointer;
+  :hover,
+  :active {
+    border: 1px solid white;
+  }
+  transition: all 0.2s ease-in-out;
   @media screen and (max-width: 1440px) {
     font-size: 14px;
     padding: 4px 0;
@@ -496,7 +511,6 @@ export const MintGamerhuntSliderTextGroup = styled.div`
 export const MintGamerhuntChartGroup = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 30px;
   width: 100%;
   @media screen and (max-width: 1440px) {

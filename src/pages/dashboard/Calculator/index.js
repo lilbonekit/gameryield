@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "../../../components/Slider";
 import TextGroup from "../../../components/TextGroup";
 import { DashboardLayout } from "../../../layouts";
@@ -20,15 +20,27 @@ import {
 import { texts, names, values } from "./data";
 
 const Calculator = () => {
-  const [state, setState] = useState({
-    pooledeth: 12,
-    gmlrone: 8.4,
-    gmlrtwo: 129.81,
-  });
+  const [days, setDays] = useState(1);
+  const [pooledeth, setPooledeth] = useState(1);
+  const [eth, setEth] = useState(0.5);
+  const [gmlr, setGmlr] = useState(12500);
+  const [percent, setPercent] = useState(12500);
 
-  const handleInputChange = (e) => {
-    setState({ ...state, [e.target.name]: e.target.value });
-  };
+  useEffect(() => {
+    setEth(0.5 * pooledeth);
+    setGmlr(12500 * pooledeth);
+    setPercent(12500 * pooledeth);
+  }, [pooledeth]);
+
+  useEffect(() => {
+    if (days >= 6 && days < 12) {
+      setGmlr(percent * 1.5);
+    } else if (days == 12) {
+      setGmlr(percent * 2);
+    } else {
+      setGmlr(percent);
+    }
+  }, [days]);
 
   return (
     <DashboardLayout title="CALCULATOR" width="300px">
@@ -49,37 +61,39 @@ const Calculator = () => {
               <span>PooledETH</span>
               <CalculatorCardInput
                 type="text"
-                onChange={handleInputChange}
+                onChange={(e) => {
+                  setPooledeth(e.target.value);
+                }}
                 name="pooledeth"
-                value={state.pooledeth}
+                value={pooledeth}
                 color="#123CFA"
               />
             </CalculatorCardPooledETHInput>
             <CalculatorCardSymbol>{">"}</CalculatorCardSymbol>
             <CalculatorCardGMLRETHInput>
-              <span>GMLR</span>
+              <span>ETH</span>
               <CalculatorCardInput
                 type="text"
-                onChange={handleInputChange}
-                name="gmlrone"
-                value={state.gmlrone}
+                name="eth"
+                value={eth}
                 color="#01F3FC"
+                disabled
               />
             </CalculatorCardGMLRETHInput>
             <CalculatorCardGMLRETHInput>
               <span>GMLR</span>
               <CalculatorCardInput
                 type="text"
-                onChange={handleInputChange}
-                name="gmlrtwo"
-                value={state.gmlrtwo}
+                name="gmlr"
+                value={gmlr}
                 color="#01F3FC"
+                disabled
               />
             </CalculatorCardGMLRETHInput>
           </CalculatorCardInputGroup>
           <CalculatorCardSliderGroup>
-            <span>30 days</span>
-            <Slider value="30" />
+            <span>{days} months</span>
+            <Slider value={days} setDays={setDays} />
           </CalculatorCardSliderGroup>
           <CalculatorCardFooter>
             <CalculatorCardFooterName>

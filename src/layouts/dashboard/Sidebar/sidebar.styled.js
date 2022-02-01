@@ -157,3 +157,25 @@ export const DashboardSidebarLink = styled(Link)`
     padding-bottom: 1px;
   }
 `;
+
+export const DashboardSidebarHref = styled.a`
+  display: inline-block;
+  transition: border-bottom 250ms;
+  padding-bottom: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  :hover {
+    border-bottom: 1px solid #60cae9;
+  }
+  :active {
+    border-bottom: 1px solid #ff008f;
+  }
+  @media screen and (max-width: 1440px) {
+    font-size: 14px;
+    padding-bottom: 2px;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 12px;
+    padding-bottom: 1px;
+  }
+`;

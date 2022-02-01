@@ -5,16 +5,6 @@ export const TextGroupContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: ${(props) => (props.align ? "flex-start" : "center")};
-  height: 60px;
-  @media screen and (max-width: 1440px) {
-    height: 50px;
-  }
-  @media screen and (max-width: 1024px) {
-    height: 45px;
-  }
-  @media screen and (max-width: 768px) {
-    height: 40px;
-  }
 `;
 
 export const TextTitleGroup = styled.div`
@@ -35,9 +25,6 @@ export const TextTitle = styled.span`
   }
   @media screen and (max-width: 1024px) {
     font-size: 10px;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 8px;
   }
 `;
 

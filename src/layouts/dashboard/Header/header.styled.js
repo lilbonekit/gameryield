@@ -102,6 +102,12 @@ export const ConnectWalletButton = styled(Link)`
   z-index: 100;
   background: transparent linear-gradient(270deg, #00f5fc 0%, #133afa 100%) 0%
     0% no-repeat padding-box;
+  border: 1px solid transparent;
+  :hover,
+  :active {
+    border-color: white;
+  }
+  transition: all 0.2s ease-in-out;
   @media screen and (max-width: 1440px) {
     padding: 8px 20px;
     font-size: 16px;
