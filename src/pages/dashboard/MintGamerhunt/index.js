@@ -1,5 +1,8 @@
 import React from "react";
 import Tooltip from "@mui/material/Tooltip";
+import Card from "../../../components/Card";
+import GenSlider from "../../../components/Slider/mint.gen";
+import YieldSlider from "../../../components/Slider/mint.yield";
 import {
   MintGamerhuntBurnCard,
   MintGamerhuntContainer,
@@ -35,8 +38,6 @@ import {
   MintGamerhuntDaysInput,
   MintGamerhuntTraxInput,
 } from "./mintgamerhunt.styled";
-import Card from "../../../components/Card";
-import Slider from "../../../components/Slider";
 import MintLineChart from "../../../components/MintLineChart";
 import {
   chart1,
@@ -147,7 +148,7 @@ const MintGamerhunt = () => {
                       ))}
                     </MintGamerhuntMintCardFooterTextCol>
                   </MintGamerhuntMintCardFooterText>
-                  <Slider value="3" />
+                  <YieldSlider value="30" />
                 </MintGamerhuntMintCardFooterAction>
               </MintGamerhuntMintCardFooter>
             </MintGamerhuntMintCardContent>
@@ -168,7 +169,7 @@ const MintGamerhunt = () => {
             <span>GEN 2</span>
             <span>GEN 3</span>
           </MintGamerhuntSliderTextGroup>
-          <Slider value="3" />
+          <GenSlider value="30" />
         </MintGamerhuntSlider>
         <MintGamerhuntChartGroup>
           <Card title="500">

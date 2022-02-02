@@ -1,8 +1,12 @@
 import React from "react";
-import { ComingSoonContainer } from "./comingsoon.styled";
+import { ComingSoonContainer, ComingSoonContent } from "./comingsoon.styled";
 
 const ComingSoon = () => {
-  return <ComingSoonContainer>Coming Soon</ComingSoonContainer>;
+  return (
+    <ComingSoonContainer>
+      <ComingSoonContent>Coming Soon</ComingSoonContent>
+    </ComingSoonContainer>
+  );
 };
 
 export default ComingSoon;
